@@ -15,6 +15,10 @@
 		FD1F1BE11CBE48E800068883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1F1BDF1CBE48E800068883 /* LaunchScreen.storyboard */; };
 		FD1F1BEC1CBE48E800068883 /* LGW_PersistenceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1F1BEB1CBE48E800068883 /* LGW_PersistenceTests.m */; };
 		FD1F1BF71CBE48E800068883 /* LGW_PersistenceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1F1BF61CBE48E800068883 /* LGW_PersistenceUITests.m */; };
+		FD7F8F461CC4B30700735833 /* PlistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7F8F451CC4B30700735833 /* PlistViewController.m */; };
+		FD7F8F481CC4BD2400735833 /* PlistData.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD7F8F471CC4BD2400735833 /* PlistData.plist */; };
+		FD7F8F4A1CC4C02100735833 /* PlistArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD7F8F491CC4C02100735833 /* PlistArray.plist */; };
+		FD7F8F4E1CC4C2B900735833 /* NSUserDefaultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7F8F4D1CC4C2B900735833 /* NSUserDefaultsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		FD1F1BF21CBE48E800068883 /* LGW_PersistenceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LGW_PersistenceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1F1BF61CBE48E800068883 /* LGW_PersistenceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGW_PersistenceUITests.m; sourceTree = "<group>"; };
 		FD1F1BF81CBE48E800068883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD7F8F441CC4B30700735833 /* PlistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlistViewController.h; sourceTree = "<group>"; };
+		FD7F8F451CC4B30700735833 /* PlistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlistViewController.m; sourceTree = "<group>"; };
+		FD7F8F471CC4BD2400735833 /* PlistData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlistData.plist; sourceTree = "<group>"; };
+		FD7F8F491CC4C02100735833 /* PlistArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlistArray.plist; sourceTree = "<group>"; };
+		FD7F8F4C1CC4C2B900735833 /* NSUserDefaultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSUserDefaultsViewController.h; sourceTree = "<group>"; };
+		FD7F8F4D1CC4C2B900735833 /* NSUserDefaultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +111,7 @@
 		FD1F1BD01CBE48E700068883 /* LGW_Persistence */ = {
 			isa = PBXGroup;
 			children = (
-				FD1F1BD41CBE48E700068883 /* AppDelegate.h */,
-				FD1F1BD51CBE48E700068883 /* AppDelegate.m */,
-				FD1F1BD71CBE48E700068883 /* ViewController.h */,
-				FD1F1BD81CBE48E700068883 /* ViewController.m */,
-				FD1F1BDA1CBE48E700068883 /* Main.storyboard */,
-				FD1F1BDD1CBE48E800068883 /* Assets.xcassets */,
-				FD1F1BDF1CBE48E800068883 /* LaunchScreen.storyboard */,
-				FD1F1BE21CBE48E800068883 /* Info.plist */,
+				FD7F8F421CC4B24D00735833 /* Classes */,
 				FD1F1BD11CBE48E700068883 /* Supporting Files */,
 			);
 			path = LGW_Persistence;
@@ -117,6 +120,9 @@
 		FD1F1BD11CBE48E700068883 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FD1F1BDD1CBE48E800068883 /* Assets.xcassets */,
+				FD1F1BDF1CBE48E800068883 /* LaunchScreen.storyboard */,
+				FD1F1BE21CBE48E800068883 /* Info.plist */,
 				FD1F1BD21CBE48E700068883 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +144,40 @@
 				FD1F1BF81CBE48E800068883 /* Info.plist */,
 			);
 			path = LGW_PersistenceUITests;
+			sourceTree = "<group>";
+		};
+		FD7F8F421CC4B24D00735833 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FD7F8F4B1CC4C23800735833 /* NSUserDefaults */,
+				FD7F8F431CC4B2D300735833 /* Plist */,
+				FD1F1BD41CBE48E700068883 /* AppDelegate.h */,
+				FD1F1BD51CBE48E700068883 /* AppDelegate.m */,
+				FD1F1BD71CBE48E700068883 /* ViewController.h */,
+				FD1F1BD81CBE48E700068883 /* ViewController.m */,
+				FD1F1BDA1CBE48E700068883 /* Main.storyboard */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		FD7F8F431CC4B2D300735833 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				FD7F8F441CC4B30700735833 /* PlistViewController.h */,
+				FD7F8F451CC4B30700735833 /* PlistViewController.m */,
+				FD7F8F471CC4BD2400735833 /* PlistData.plist */,
+				FD7F8F491CC4C02100735833 /* PlistArray.plist */,
+			);
+			name = Plist;
+			sourceTree = "<group>";
+		};
+		FD7F8F4B1CC4C23800735833 /* NSUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				FD7F8F4C1CC4C2B900735833 /* NSUserDefaultsViewController.h */,
+				FD7F8F4D1CC4C2B900735833 /* NSUserDefaultsViewController.m */,
+			);
+			name = NSUserDefaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +286,8 @@
 				FD1F1BE11CBE48E800068883 /* LaunchScreen.storyboard in Resources */,
 				FD1F1BDE1CBE48E800068883 /* Assets.xcassets in Resources */,
 				FD1F1BDC1CBE48E700068883 /* Main.storyboard in Resources */,
+				FD7F8F481CC4BD2400735833 /* PlistData.plist in Resources */,
+				FD7F8F4A1CC4C02100735833 /* PlistArray.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +315,8 @@
 				FD1F1BD91CBE48E700068883 /* ViewController.m in Sources */,
 				FD1F1BD61CBE48E700068883 /* AppDelegate.m in Sources */,
 				FD1F1BD31CBE48E700068883 /* main.m in Sources */,
+				FD7F8F461CC4B30700735833 /* PlistViewController.m in Sources */,
+				FD7F8F4E1CC4C2B900735833 /* NSUserDefaultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +540,7 @@
 				FD1F1BFD1CBE48E800068883 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD1F1BFE1CBE48E800068883 /* Build configuration list for PBXNativeTarget "LGW_PersistenceTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +549,7 @@
 				FD1F1C001CBE48E800068883 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD1F1C011CBE48E800068883 /* Build configuration list for PBXNativeTarget "LGW_PersistenceUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +558,7 @@
 				FD1F1C031CBE48E800068883 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
