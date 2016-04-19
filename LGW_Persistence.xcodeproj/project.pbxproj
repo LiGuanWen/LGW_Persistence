@@ -15,6 +15,8 @@
 		FD1F1BE11CBE48E800068883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1F1BDF1CBE48E800068883 /* LaunchScreen.storyboard */; };
 		FD1F1BEC1CBE48E800068883 /* LGW_PersistenceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1F1BEB1CBE48E800068883 /* LGW_PersistenceTests.m */; };
 		FD1F1BF71CBE48E800068883 /* LGW_PersistenceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1F1BF61CBE48E800068883 /* LGW_PersistenceUITests.m */; };
+		FD2457A21CC52F28001F64CF /* SKeyedArchiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2457A11CC52F28001F64CF /* SKeyedArchiverViewController.m */; };
+		FD2457A51CC5349F001F64CF /* ModelArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2457A41CC5349F001F64CF /* ModelArchiver.m */; };
 		FD7F8F461CC4B30700735833 /* PlistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7F8F451CC4B30700735833 /* PlistViewController.m */; };
 		FD7F8F481CC4BD2400735833 /* PlistData.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD7F8F471CC4BD2400735833 /* PlistData.plist */; };
 		FD7F8F4A1CC4C02100735833 /* PlistArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD7F8F491CC4C02100735833 /* PlistArray.plist */; };
@@ -55,6 +57,10 @@
 		FD1F1BF21CBE48E800068883 /* LGW_PersistenceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LGW_PersistenceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1F1BF61CBE48E800068883 /* LGW_PersistenceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGW_PersistenceUITests.m; sourceTree = "<group>"; };
 		FD1F1BF81CBE48E800068883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD2457A01CC52F28001F64CF /* SKeyedArchiverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKeyedArchiverViewController.h; sourceTree = "<group>"; };
+		FD2457A11CC52F28001F64CF /* SKeyedArchiverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKeyedArchiverViewController.m; sourceTree = "<group>"; };
+		FD2457A31CC5349F001F64CF /* ModelArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelArchiver.h; sourceTree = "<group>"; };
+		FD2457A41CC5349F001F64CF /* ModelArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelArchiver.m; sourceTree = "<group>"; };
 		FD7F8F441CC4B30700735833 /* PlistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlistViewController.h; sourceTree = "<group>"; };
 		FD7F8F451CC4B30700735833 /* PlistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlistViewController.m; sourceTree = "<group>"; };
 		FD7F8F471CC4BD2400735833 /* PlistData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlistData.plist; sourceTree = "<group>"; };
@@ -146,9 +152,21 @@
 			path = LGW_PersistenceUITests;
 			sourceTree = "<group>";
 		};
+		FD24579F1CC52F22001F64CF /* SKeyedArchiver */ = {
+			isa = PBXGroup;
+			children = (
+				FD2457A01CC52F28001F64CF /* SKeyedArchiverViewController.h */,
+				FD2457A11CC52F28001F64CF /* SKeyedArchiverViewController.m */,
+				FD2457A31CC5349F001F64CF /* ModelArchiver.h */,
+				FD2457A41CC5349F001F64CF /* ModelArchiver.m */,
+			);
+			name = SKeyedArchiver;
+			sourceTree = "<group>";
+		};
 		FD7F8F421CC4B24D00735833 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FD24579F1CC52F22001F64CF /* SKeyedArchiver */,
 				FD7F8F4B1CC4C23800735833 /* NSUserDefaults */,
 				FD7F8F431CC4B2D300735833 /* Plist */,
 				FD1F1BD41CBE48E700068883 /* AppDelegate.h */,
@@ -312,11 +330,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD2457A51CC5349F001F64CF /* ModelArchiver.m in Sources */,
 				FD1F1BD91CBE48E700068883 /* ViewController.m in Sources */,
 				FD1F1BD61CBE48E700068883 /* AppDelegate.m in Sources */,
 				FD1F1BD31CBE48E700068883 /* main.m in Sources */,
 				FD7F8F461CC4B30700735833 /* PlistViewController.m in Sources */,
 				FD7F8F4E1CC4C2B900735833 /* NSUserDefaultsViewController.m in Sources */,
+				FD2457A21CC52F28001F64CF /* SKeyedArchiverViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
